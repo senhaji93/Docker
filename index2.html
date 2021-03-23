@@ -1,0 +1,121 @@
+<!Doctype html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     
+     <title>tp1bis docker </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        .container {
+                   /* On ajoute une marge sur les cotés de l'écran */
+                    padding-right: 15px;
+                    padding-left: 15px;
+                  
+                      /* Et on centre */
+                     margin-right: auto;
+                    margin-left: auto;
+                   }
+	       @media (min-width: 1200px){
+		    .container {
+			width: 800px;
+		    }
+		}
+		.container h1{
+		    width: 50%;
+		    margin: 0 auto;
+		    padding-bottom: 10px;
+             }
+              input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              form {
+ 
+		      border: 5px solid ;
+		      border-style: solid;
+				    border-color: rgba(0, 0, 255, 0.5) rgba(170, 50, 220, .6) rgba(0, 0, 255, 0.5);
+		    background: #fff;
+		    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+		}
+            input[type=submit] {
+		    background-color:  rgba(0, 0, 255, 0.5); 
+		    color: white;
+		    padding: 14px 20px;
+		    margin: 8px 0;
+		    border: none;
+		    cursor: pointer;
+		    width: 100%;
+		}
+              
+              input[type=submit]:hover {
+                background-color: white;
+		    color: rgba(0, 0, 255, 0.5);
+		    border: 1px solid rgba(0, 0, 255, 0.5);
+              }
+              
+              div {
+                border-radius: 10px;
+                background-color: #f2f2f9;
+                padding: 10px;
+              }
+        
+              </style>
+              <body>
+
+
+
+
+
+</head>
+<body>
+
+	
+ <div class="container">
+ <!---heading---->
+ <form method="POST" action="dockerex.php">
+     <header class="heading"><h1>Creation d'image</h1> </header><hr></hr>
+    <!---Form starting----> 
+    <div class="row ">
+     
+
+          <div>
+                 <div>
+                     <div >
+                          <label><h2> github applcation link :</h2></label></div>
+                  <div>
+                         <input type="text" name="link" id="lien"  value="">
+                 </div>
+          </div>
+          </div>
+
+          <div>
+                 <div>
+                     <div>
+                          <label><h2>image name :</h2></label></div>
+                  <div>
+                         <input type="text" name="img" id="image">
+                 </div>
+          </div>
+          </div>
+             
+           <div >
+                        <input type="submit" name="envoyer" value="Envoyer" />
+                 
+           </div>
+         
+     </div>  
+    
+</form>
+
+                 
+         
+</div>
+
+</body>     
+</html>
